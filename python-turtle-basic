@@ -1,0 +1,46 @@
+#!/usr/bin/env python
+
+import turtle
+
+def draw_square():
+    window = turtle.Screen()
+    window.bgcolor("black")
+    brad = turtle.Turtle()
+    brad.shape("turtle")
+    brad.color("yellow")
+    brad.speed(6)
+    for i in range(4):
+        brad.forward(100)
+        brad.right(90)
+
+
+def draw_circle():
+    window = turtle.Screen()
+    window.bgcolor("black")
+    angie = turtle.Turtle()
+    angie.shape("circle")
+    angie.color("blue")
+    angie.circle(100)
+
+def draw_triangle():
+    window = turtle.Screen()
+    window.bgcolor("black")
+    kerrie = turtle.Turtle()
+    kerrie.shape("triangle")
+    kerrie.color("yellow")
+
+    for i in range(3):
+        kerrie.left(120)
+        kerrie.forward(60)
+
+    window.exitonclick()
+
+def main():
+    draw_square()
+    draw_circle()
+    draw_triangle()
+
+if __name__ == "__main__":
+    main()
+
+
