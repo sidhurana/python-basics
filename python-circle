@@ -1,0 +1,32 @@
+#!/usr/bin/env python
+
+import turtle
+
+def draw_loop(some_tur):
+    for i in range(5):
+        some_tur.forward(100)
+        some_tur.right(90)
+
+
+def draw_square():
+    window = turtle.Screen()
+    window.bgcolor("black")
+    brad = turtle.Turtle()
+    brad.shape("turtle")
+    brad.color("yellow")
+    brad.speed(6)
+
+    for j in range(36):
+        draw_loop(brad)
+        brad.right(10)
+
+    window.exitonclick()
+
+def main():
+    draw_square()
+
+
+if __name__ == "__main__":
+    main()
+
+
